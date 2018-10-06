@@ -10,7 +10,7 @@ data Planet = Mercury
             | Neptune
 
 secToYears :: Fractional a => a -> a
-secToYears sec = sec / 60 / 60 / 24 / 365.25
+secToYears sec = sec / 31557600
 
 ageOn :: Planet -> Float -> Float
 ageOn Mercury age = secToYears age / 0.2408467
