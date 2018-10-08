@@ -1,9 +1,9 @@
 module Acronym (abbreviate) where
 
-import Data.Char
+import Data.Char (isAlpha, isUpper, toLower, toUpper)
 
 abbreviate :: String -> String
-abbreviate = filter pred . concatMap capitalize . split
+abbreviate = concatMap (filter pred . capitalize) . split
   where pred x = isAlpha x && isUpper x
 
 capitalize :: String -> String
