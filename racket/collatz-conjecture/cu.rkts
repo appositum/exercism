@@ -1,0 +1,15 @@
+#lang racket
+
+(provide collatz)
+
+(define collatz 3)
+
+(define/match (aux acc n)
+  [(acc 1) acc]
+  [(acc n)
+    (cond
+      [(even? n) (aux (+ 1 acc) (n / 2))]
+      [else (aux (+ 1 acc) (+ (* 3 n) 1))]
+    )
+  ]
+)
