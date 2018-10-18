@@ -33,5 +33,22 @@ erl_crash.dump
 *.beam
 /config/*.secret.exs
 
+### Racket ###
+*.rkt~
+*.rkt.bak
+\#*.rkt#
+\#*.rkt#*#
+*.dep
+*.zo
+
+### Scheme ###
+*.ss~
+*.ss#*
+.#*.ss
+
+*.scm~
+*.scm#*
+.#*.scm
+
 # exercism
 .solution.json
