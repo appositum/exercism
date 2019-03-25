@@ -176,3 +176,6 @@ pip-selfcheck.json
 
 ### Idris ###
 *.ibc
+
+### BuckleScript ###
+*.bs.js
